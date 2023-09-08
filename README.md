@@ -41,6 +41,9 @@ sfc /scannow
 If any issues are detected, execute the following command:
 ```bash
 /offbootdir-c:\ /offwindir=d:\windows
+DISM /Online /Cleanup-Image /CheckHealth
+DISM /Online /Cleanup-Image /ScanHealth
+DISM /Online /Cleanup-Image /RestoreHealth
 ```
 
 ### Command to remove corrupted updates:
@@ -138,6 +141,9 @@ Substitua `d:` pelo diretório do disco local correspondente.
 ### Comando para verificar e corrigir arquivos corrompidos:
 ```bash
 sfc /scannow
+DISM /Online /Cleanup-Image /CheckHealth
+DISM /Online /Cleanup-Image /ScanHealth
+DISM /Online /Cleanup-Image /RestoreHealth
 ```
 Se houver algum problema, execute o seguinte comando:
 ```bash
